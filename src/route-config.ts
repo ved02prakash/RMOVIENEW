@@ -10,16 +10,16 @@ import CreateMovie from "./movies/createmovie";
 import Creategenres from "./genres/creategenres";
 import RedirectToLandingPage from "./utils/RedirectToLandingPage";
 import Editgenres from "./genres/Editgenres";
+import CreateActors from "./actors/CreateActors";
 
 const routes=[
     {path:'/genres',component:IndexGenres, exact:true},
-
     {path:'/genres/create',component:Creategenres},
     {path:'/genres/edit/:id(\\d+)',component:Editgenres},
 
     {path:'/actors',component:IndexActors, exact:true},
-    {path:'/genres/create',component:Creategenres},
-    {path:'/genres/edit/:id(\\d+)',component:Editgenres},
+    {path:'/actors/create',component:CreateActors},
+    {path:'/actors/edit/:id(\\d+)',component:Editgenres},
 
     {path:'/movietheaters',component:indexmovietheaters, exact:true},
     {path:'/movietheaters/create',component:CreateMovieTheater},
