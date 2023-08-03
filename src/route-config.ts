@@ -11,6 +11,7 @@ import Creategenres from "./genres/creategenres";
 import RedirectToLandingPage from "./utils/RedirectToLandingPage";
 import Editgenres from "./genres/Editgenres";
 import CreateActors from "./actors/CreateActors";
+import EditActorForm from "./actors/EditActorForm";
 
 const routes=[
     {path:'/genres',component:IndexGenres, exact:true},
@@ -19,7 +20,7 @@ const routes=[
 
     {path:'/actors',component:IndexActors, exact:true},
     {path:'/actors/create',component:CreateActors},
-    {path:'/actors/edit/:id(\\d+)',component:Editgenres},
+    {path:'/actors/edit/:id(\\d+)',component:EditActorForm},
 
     {path:'/movietheaters',component:indexmovietheaters, exact:true},
     {path:'/movietheaters/create',component:CreateMovieTheater},
