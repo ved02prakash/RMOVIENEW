@@ -5,7 +5,9 @@ export default function CreateActors(){
         <>
         <h3>Create Actors</h3>
         <ActorForm model={{name:'',dateofBirth:undefined}}
-        onSubmit={values=> console.log(values)}
+        onSubmit={async value => {
+            await new Promise((r) => setTimeout(r, 3000));
+            console.log(value);}}
         ></ActorForm>
         </>
     )

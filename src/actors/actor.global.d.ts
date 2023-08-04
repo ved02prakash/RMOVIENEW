@@ -3,6 +3,7 @@ interface actorCreationDTO{
     dateofBirth?:Date;
     picture?:File;
     pictureURL?:string;
+    biography?:string;
 }
 
 export default actorCreationDTO;

@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import * as Yup from 'yup'
 import DateField from "../utils/DateField";
 import ImageField from "../utils/ImageField";
+import MarkdownField from "../utils/MarkdownField";
 export default function ActorForm(props: actorFormProps){
     return (
 <Formik 
@@ -23,6 +24,7 @@ validationSchema={Yup.object({
     <ImageField displayName="Image" field="picture"
     imageURL={props.model.pictureURL}
     ></ImageField>
+    <MarkdownField displayName="Biography" field="biography"></MarkdownField>
     <Button disabled={formikProps.isSubmitting} className="btn btn-primary" type="submit">Save Changes</Button>
     <Link to="/actors" className="btn btn-secondary">Cancel</Link>
 </Form>
