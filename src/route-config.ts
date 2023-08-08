@@ -2,7 +2,7 @@ import IndexGenres from "./genres/indexGenres";
 import LandingPage from "./movies/LandingPage";
 import IndexActors from "./actors/indexActors";
 import indexmovietheaters from "./movietheaters/indexmovietheares";
-import editmovietheater from "./movietheaters/editmovietheater";
+import Editmovietheater from "./movietheaters/Editmovietheater";
 import editmovie from "./movies/editmovie";
 import filtermovies from "./movies/filtermovies";
 import CreateMovieTheater from "./movietheaters/createmovietheater";
@@ -24,7 +24,7 @@ const routes=[
 
     {path:'/movietheaters',component:indexmovietheaters, exact:true},
     {path:'/movietheaters/create',component:CreateMovieTheater},
-    {path:'/movietheaters/edit/:id(\\d+)',component:editmovietheater},
+    {path:'/movietheaters/edit/:id(\\d+)',component:Editmovietheater},
 
     {path:'/movies/create',component:CreateMovie},
     {path:'/movies/edit/:id(\\d+)',component:editmovie},
